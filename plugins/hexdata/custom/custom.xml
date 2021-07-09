@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0"  client="administrator" method="upgrade" type="plugin" group="hexdata">
+	<name>HEXDATA_CUSTOM</name>
+	<version>1.1.0</version>
+	<creationDate>February 2014</creationDate>
+	<author>WDMtech</author>
+	<authorEmail>support@wdmtech.com</authorEmail>
+	<authorUrl>http://www.wdmtech.com</authorUrl>
+	<copyright>Copyright (C) 2014 wdmtech.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>HEXDATA_CUSTOM_DESCRIPTION</description>
+	
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysqli">sql/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysqli">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<files>
+		<filename plugin="custom">custom.php</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		
+		<folder>sql</folder>
+		
+	</files>
+	
+	<!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="HEXDATA_UPDATE_SITE">http://www.wdmtech.com/prod_updates/hexdata-custom-upgrade.xml</server>
+	</updateservers>
+	
+</extension>

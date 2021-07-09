@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>hexdata</name>
+	<!-- The following elements are optional and free of formatting conttraints -->
+	<creationDate>February 2014</creationDate>
+	<author>Team WDMtech</author>
+	<authorEmail>support@wdmtech.com</authorEmail>
+	<authorUrl>http://www.wdmtech.com</authorUrl>
+	<copyright>Copyright (C) 2014 wdmtech.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<version>1.1.0</version>
+	<description>COM_HEXDATA_DESCRIPTION</description>
+	
+	<scriptfile>script.php</scriptfile>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysqli">sql/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysqli">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<media folder="media" destination="com_hexdata">
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>images</folder>
+	</media>
+	
+	<administration>
+		
+		<menu img="../media/com_hexdata/images/icon-16-hexdata.png">HEXDATA</menu>
+		<submenu>
+			<menu view="profiles" img="../media/com_hexdata/images/icon-16-profiles.png">PROFILES</menu>
+			<menu view="import" img="../media/com_hexdata/images/icon-16-import.png">IMPORT</menu>
+		</submenu>
+
+		<files folder="admin">
+
+		<filename>hexdata.php</filename>
+		<filename>index.html</filename>
+		<filename>controller.php</filename>
+		<filename>changelog.txt</filename>
+		
+		<folder>sql</folder>
+		
+		<folder>classes</folder>
+		<folder>controllers</folder>
+		<folder>help</folder>
+		<folder>models</folder>
+		<folder>tables</folder>
+		<folder>views</folder>
+		<folder>uploads</folder>
+		<folder>language</folder>
+		
+	</files>
+		
+	</administration>
+	
+	<!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="HEXDATA_UPDATE_SITE">http://www.wdmtech.com/prod_updates/hexdata-upgrade.xml</server>
+	</updateservers>
+	
+</extension>

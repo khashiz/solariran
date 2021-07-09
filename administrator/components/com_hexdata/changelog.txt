@@ -1,0 +1,19 @@
+; com_hexdata - HexData
+; author    Team HexSys - wdmtech
+; copyright Copyright (C) 2014 wdmtech.com. All Rights Reserved.
+; @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+; Websites: http://www.wdmtech.com
+; Technical Support:  Forum - http://www.wdmtech.com/support-forum
+
+
+From 1.0.1 to 1.1.0
+^ Now you've a better control on data to import / export
+^ Profile edit screen is redesigned
++ Now Existing records gets updated and non existing records gets added automatically while importing
++ Now you can choose the data type for every input from CSV file while adding/editing profile
++ Now It shows the number of records imported
++ Now it matches the columns in CSV files with the fields and selects automatically if match found
+
+
+From 1.0.0 to 1.0.1
++ Now you can also export Data in CSV format using the same profile system

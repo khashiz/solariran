@@ -1,0 +1,1 @@
+DROP TABLE `#__hd_profile_field`;

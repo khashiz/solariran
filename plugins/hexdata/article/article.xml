@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0"  client="admin" type="plugin" group="hexdata" method="upgrade">
+	<name>HexData Import &amp; Export for Joomla Articles</name>
+	<version>1.0.1</version>
+	<creationDate>February 2014</creationDate>
+	<author>WDMtech</author>
+	<authorEmail>support@wdmtech.com</authorEmail>
+	<authorUrl>http://www.wdmtech.com</authorUrl>
+	<copyright>Copyright (C) 2014 wdmtech.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>HEXDATA_ARTICLE_DESCRIPTION</description>
+	
+	<files>
+		<filename plugin="article">article.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_hexdata_article.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_hexdata_article.sys.ini</language>
+	</languages>
+	 <config>
+ 	 <fields name="params" >
+	   <fieldset name="basic">
+	   </fieldset>	
+	 </fields>
+    </config>
+</extension>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0"  client="admin" type="plugin" group="hexdata" method="upgrade">
+	<name>HEXDATA_K2</name>
+	<version>1.0.0</version>
+	<creationDate>September 2013</creationDate>
+	<author>HexSys Technologies</author>
+	<authorEmail>support@hexsystechnologies.com</authorEmail>
+	<authorUrl>http://www.hexsystechnologies.com</authorUrl>
+	<copyright>Copyright (C) 2013 hexsystechnologies.com. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>HEXDATA_K2_DESCRIPTION</description>
+	
+	<files>
+		<filename plugin="k2">k2.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+	 <config>
+ 	 <fields name="params" >
+	   <fieldset name="basic">
+	   </fieldset>	
+	 </fields>
+    </config>
+</extension>
